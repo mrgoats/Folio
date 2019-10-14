@@ -8,13 +8,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProjetosDetalheComponent implements OnInit {
 
-  public detalhes = { id: 0, description:'', projectInfo:''};
+  public detalhes = { id: 0, description:'', info:''};
   
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     let id = parseInt(this.route.snapshot.paramMap.get('id'));
-    let description = this.route.snapshot.paramMap.get(('desc'));
+    let description = this.route.snapshot.paramMap.get(('name'));
     let projectInfo = this.route.snapshot.paramMap.get(('info'));
     this.detalhes.id = id;
     this.detalhes.description = description;
