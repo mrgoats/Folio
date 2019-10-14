@@ -1,0 +1,9 @@
+<ul class="projetos">
+ <li *ngFor="let projeto of projetos">
+      <div class="card" (click)="onSelect(projeto)">
+         <p>{{projeto.id}}</p>
+         <h3>{{projeto.name}}</h3>
+         <p>{{projeto.description}}</p>
+      </div>
+ </li>
+</ul>

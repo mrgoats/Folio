@@ -1,0 +1,31 @@
+.left {
+    display: flex;
+    width: 50%;
+    float: left;
+    figure {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.right {
+    width: 50%;
+    display: flex;
+    float: left;
+    p {
+        color: #101010;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .left{
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+  }

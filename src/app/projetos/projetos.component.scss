@@ -1,0 +1,26 @@
+.projetos {
+    list-style: none;
+    padding: 0;
+    li {
+        float: left;
+        width: 50%;
+        max-width: 50%;
+        display: flex;
+    }
+}
+.card {
+    width: 100%;
+    height: 350px;
+    background: #e4e4e4;
+    float: left;
+    margin: 12px;
+    border: 1px solid;
+    transition: 0.3s;
+    &:hover {
+        background-color: #f6d258;
+    }
+    p, h3 {
+        margin-left: 15px;
+        font-size: 1.25em;
+    }
+}
