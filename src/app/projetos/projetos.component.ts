@@ -30,7 +30,7 @@ export class ProjetosComponent implements OnInit {
   }
 
   onSelect(projeto){
-    this.router.navigate(['/projetos', projeto.id, {desc: projeto.description, info: projeto.projectInfo}]);
+    this.router.navigate(['/projetos', projeto.id, {name: projeto.name, info: projeto.projectInfo}]);
   }
 
 }
